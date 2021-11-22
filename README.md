@@ -7,3 +7,5 @@ Implementation of the IPLD spec in C.
 ------
 #### * Formatting links as such: foo/bar : {}
 #### * Deep searching nodes
+
+#### Serializers binary based for struct packing/unpacking with memory layout.

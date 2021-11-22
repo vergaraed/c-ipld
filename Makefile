@@ -14,7 +14,10 @@ LINKER_FLAGS = -ljansson
 link: $(OBJS)
 	gcc -shared $(INCLUDE) $(OBJS) -o libc-ipld.a $(LINKER_FLAGS)
 
-# test:
+test:
+	gcc ipld_tut.o -o ipld_test -ljansson -L. -lc-ipld 
+
 clean:
 	rm -f $(OBJS)
 	rm libc-ipld.a
+	rm ipld_test
